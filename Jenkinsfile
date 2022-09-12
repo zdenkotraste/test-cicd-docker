@@ -27,5 +27,12 @@ pipeline {
       }
     }
 
+
+    stage('Push image to Dockerhub'){
+      steps{
+        sh "echo holamundo"
+      }
+    }
+
   }
 }
