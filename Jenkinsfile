@@ -28,7 +28,7 @@ pipeline {
     }
 
 
-    stage('Push image to Dockerhub'){
+    stage('test'){
       steps{
         sh "echo holamundo"
       }
