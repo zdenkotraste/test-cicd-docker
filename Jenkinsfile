@@ -15,6 +15,12 @@ pipeline {
       }
     }
 
+    stage("Run"){
+      steps{
+        sh "docker run -p 3000:3000 --name nodeapp_test ${env.RepoDockerHub}/${env.NameContainer}:${env.BUILD_NUMBER}"
+      }
+    }
+
     stage('Login to Dockerhub'){
       steps{
         sh "echo $Dockerhub_Credentials_PSW | docker login -u $Dockerhub_Credentials_USR --password-stdin"
