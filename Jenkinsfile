@@ -17,7 +17,7 @@ pipeline {
 
     stage("Run"){
       steps{
-        sh "docker run -p 3000:3000 --name nodeapp_test ${env.RepoDockerHub}/${env.NameContainer}:${env.BUILD_NUMBER}"
+        sh "docker run -p 300${env.BUILD_NUMBER}:3000 -d --name nodeapp_test${env.BUILD_NUMBER} ${env.RepoDockerHub}/${env.NameContainer}:${env.BUILD_NUMBER}"
       }
     }
 
