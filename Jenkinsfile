@@ -33,12 +33,5 @@ pipeline {
       }
     }
 
-
-    stage('test'){
-      steps{
-        sh "echo holamundo"
-      }
-    }
-
   }
 }
