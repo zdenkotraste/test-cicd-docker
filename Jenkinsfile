@@ -27,7 +27,7 @@ pipeline {
 
     stage('test') {
       steps {
-        sh 'echo "hola mundo"'
+        sh 'echo "BIEN COMPILADO!"'
       }
     }
 
