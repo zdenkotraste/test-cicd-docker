@@ -35,6 +35,6 @@ pipeline {
   environment {
     RepoDockerHub = 'zdenkoo98'
     NameContainer = 'nodeapp_edit'
-    Dockerhub_Credentials = credentials('docker-user')
+    Dockerhub_Credentials = credentials('Docker-User')
   }
 }
