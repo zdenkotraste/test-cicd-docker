@@ -33,7 +33,7 @@ pipeline {
 
   }
   environment {
-    RepoDockerHub = 'togijor/repo'
+    RepoDockerHub = 'togijor'
     NameContainer = 'nodeapp_edit'
     Dockerhub_Credentials = credentials('Docker-User')
   }
